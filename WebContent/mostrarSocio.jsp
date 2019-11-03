@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -39,7 +40,8 @@
           <td><strong>Oficina Origen</strong></td>
           <td><strong>Fecha de Ingreso</strong></td>
           <td><strong>Ejecutivo</strong></td>
-          <td colspan=2>ACCIONES</td>
+          <td></td>
+          <td></td>
         </tr>
         <c:forEach var="socio" items="${listaSocios}">
         	<tr>
@@ -55,8 +57,8 @@
           		<td><c:out value="${socio.oficinaOrigen}"/></td>
           		<td><c:out value="${socio.fechaIngreso}"/></td>
           		<td><c:out value="${socio.ejecutivo}"/></td>
-          		<td><a href="adminArticulo?action=showedit&id=<c:out value="${socio.id}" />">Editar</a></td>
-          		<td><a href="adminArticulo?action=eliminar&id=<c:out value="${socio.id}"/>">Eliminar</a> </td>       
+          		<td><a href="adminArticulo?action=showedit&id=<c:out value="${socio.codigoSocio}" />">Editar</a></td>
+          		<td><a href="adminArticulo?action=eliminar&id=<c:out value="${socio.codigoSocio}"/>">Eliminar</a> </td>       
         	</tr>
       </c:forEach>
       </table>
