@@ -12,14 +12,8 @@
 <title>Socios</title>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="cuentasEjecutivo?action=mostrar">
-        <img alt="Brand" src="...">
-      </a>
-    </div>
-  </div>
+<nav class="navbar navbar-dark bg-dark">
+	<a class="navbar-brand" href="socioController?action=mostrar">Socios</a>
 </nav>
 
 <h3 class="text-center">Socios</h3>
