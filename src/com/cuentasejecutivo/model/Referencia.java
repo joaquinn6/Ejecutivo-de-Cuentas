@@ -5,11 +5,14 @@ public class Referencia {
 	private String tipoReferencia;
 	private String nombre;
 	private String nombreTrabajo;
-	private Integer mail;
+	private String mail;
 	private String telefono;
 	private String observacion;
 
-	public Referencia(Integer codigoSocio, String tipoReferencia, String nombre, String nombreTrabajo, Integer mail,
+	public Referencia() {
+		super();
+	}
+	public Referencia(Integer codigoSocio, String tipoReferencia, String nombre, String nombreTrabajo, String mail,
 			String telefono, String observacion) {
 		super();
 		this.codigoSocio = codigoSocio;
@@ -44,10 +47,10 @@ public class Referencia {
 	public void setNombreTrabajo(String nombreTrabajo) {
 		this.nombreTrabajo = nombreTrabajo;
 	}
-	public Integer getMail() {
+	public String getMail() {
 		return mail;
 	}
-	public void setMail(Integer mail) {
+	public void setMail(String mail) {
 		this.mail = mail;
 	}
 	public String getTelefono() {

@@ -14,6 +14,7 @@
 <body>
 <nav class="navbar navbar-dark bg-dark">
 	<a class="navbar-brand" href="socioController?action=mostrar">Socios</a>
+	<a class="navbar-brand" href="socioController?action=socioGet&id=0">Agregar Socio</a>
 </nav>
 
 <h3 class="text-center">Socios</h3>
@@ -51,8 +52,8 @@
           		<td><c:out value="${socio.oficinaOrigen}"/></td>
           		<td><c:out value="${socio.fechaIngreso}"/></td>
           		<td><c:out value="${socio.ejecutivo}"/></td>
-          		<td><a href="adminArticulo?action=showedit&id=<c:out value="${socio.codigoSocio}" />">Editar</a></td>
-          		<td><a href="adminArticulo?action=eliminar&id=<c:out value="${socio.codigoSocio}"/>">Eliminar</a> </td>       
+          		<td><a href="socioController?action=socioGet&id=<c:out value="${socio.codigoSocio}" />">Editar</a></td>
+          		<td><a href="socioController?action=eliminar&id=<c:out value="${socio.codigoSocio}"/>">Eliminar</a> </td>       
         	</tr>
       </c:forEach>
       </table>

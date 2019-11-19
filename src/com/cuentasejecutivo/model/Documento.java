@@ -7,6 +7,10 @@ public class Documento {
 	private String fechaCaducidad;
 	private String paisEmision;
 
+	
+	public Documento() {
+		super();
+	}
 	public Documento(Integer codigoSocio, String tipoDocumento, String fechaReferencia, String fechaCaducidad,
 			String paisEmision) {
 		super();

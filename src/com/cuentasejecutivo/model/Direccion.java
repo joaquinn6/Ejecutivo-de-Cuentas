@@ -5,10 +5,15 @@ public class Direccion {
 	private String tipoDireccion;
 	private String pais;
 	private String departamento;
-	private String Ciudad;
+	private String ciudad;
 	private String barrioComarca;
 	private String dirrecionDomiciliar;
 	private String tipoPropiedad;
+	
+	
+	public Direccion() {
+		super();
+	}
 	public Direccion(Integer codigoSocio, String tipoDireccion, String pais, String departamento, String Ciudad,
 			String barrioComarca, String dirrecionDomiciliar, String tipoPropiedad) {
 		super();
@@ -16,7 +21,7 @@ public class Direccion {
 		this.tipoDireccion = tipoDireccion;
 		this.pais = pais;
 		this.departamento = departamento;
-		this.Ciudad = Ciudad;
+		this.ciudad = Ciudad;
 		this.barrioComarca = barrioComarca;
 		this.dirrecionDomiciliar = dirrecionDomiciliar;
 		this.tipoPropiedad = tipoPropiedad;
@@ -46,10 +51,10 @@ public class Direccion {
 		this.departamento = departamento;
 	}
 	public String getCiudad() {
-		return Ciudad;
+		return ciudad;
 	}
 	public void setCiudad(String Ciudad) {
-		this.Ciudad = Ciudad;
+		this.ciudad = Ciudad;
 	}
 	public String getBarrioComarca() {
 		return barrioComarca;

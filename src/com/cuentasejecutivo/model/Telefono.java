@@ -6,6 +6,10 @@ public class Telefono {
 	private Integer numero;
 	private String extension;
 
+	public Telefono() {
+		super();
+	}
+	
 	public Telefono(Integer codigoSocio, String tipoTelefono, Integer numero, String extension) {
 		super();
 		this.codigoSocio = codigoSocio;

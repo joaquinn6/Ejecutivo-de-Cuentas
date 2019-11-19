@@ -14,6 +14,10 @@ public class Socio {
 	private String fechaIngreso;
 	private String ejecutivo;
 	
+	public Socio(){
+		
+	}
+	
 	public Socio(Integer codigoSocio, String tipoId, String identificacion, String nombreUsual, String relacion,
 			String grupoEconomico, Boolean exoneradoImpuesto, String relacionAseguradora, String sucursalOrigen,
 			String oficinaOrigen, String fechaIngreso, String ejecutivo) {

@@ -9,7 +9,13 @@ public class Trabajo {
 	private String telefono;
 	private String funcion;
 	private String tipoContrato;
-  private String cargo;
+	
+	
+	
+  public Trabajo() {
+		super();
+	}
+private String cargo;
 	public Trabajo(Integer codigoSocio, String tipoEmpresa, String nombreEmpresa, String fechaIngreso, String direccion,
 			String telefono, String funcion, String tipoContrato, String cargo) {
 		super();

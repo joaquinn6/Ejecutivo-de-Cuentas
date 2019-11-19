@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,19 +28,19 @@
         </select>
 
         <label for="FechaIngreso">Fecha de Ingreso</label>
-        <input type="text" class="form-control" name="FechaIngreso" >
+        <input type="text" class="form-control" name="FechaIngreso" value='<c:out value="${trabajo.fechaIngreso} "></c:out>'>
 
         <label for="Direccion">Direccion</label>
-        <textarea class="form-control" name=Direccion></textarea>
+        <textarea class="form-control" name=Direccion value='<c:out value="${trabajo.direccion}"></c:out>'></textarea>
 
         <label for="Telefono">Telefono</label>
-        <input type="text" class="form-control" name="Telefono" >
+        <input type="text" class="form-control" name="Telefono"value='<c:out value="${trabajo.telefono} "></c:out>'>
 
         <label for="Funcion">Funcion</label>
-        <input type="text" class="form-control" name="Funcion" >
+        <input type="text" class="form-control" name="Funcion" value='<c:out value="${trabajo.funcion}"></c:out>'>
 
         <label for="TipoContrato">Tipo de Contrato</label>
-        <input type="text" class="form-control" name="TipoContrato" >
+        <input type="text" class="form-control" name="TipoContrato" value='<c:out value="${trabajo.tipoContrato}"></c:out>'>
 
         <label for="Cargo">Cargo</label>
         <input type="text" class="form-control" name="Cargo" >

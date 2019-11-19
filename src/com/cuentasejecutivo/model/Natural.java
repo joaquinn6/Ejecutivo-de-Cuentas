@@ -17,6 +17,11 @@ public class Natural {
   private String actividadPrincipal;
   private String actividadSecundaria;
   private String ocupacion;
+  
+  
+	public Natural() {
+	super();
+}
 	public Natural(Integer codigoSocio, String apellidoPaterno, String apellidoMaterno, String nombres, String nacionalidad,
 			String profesion, String nivelEducacional, String estadoCivil, String fechaNacimiento, String tipoVivienda,
       Integer numeroDependencia, String estado, String sectorEconomico, String actividadPrincipal, String actividadSecundaria, String ocupacion) {

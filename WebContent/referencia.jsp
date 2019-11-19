@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -21,19 +22,21 @@
       <form action="crearReferenciaServlet" method="post">
 
         <label for="TipoReferencia">Tipo de Referencia</label>
-        <input type="text" class="form-control" name="TipoReferencia" >
+        <input type="text" class="form-control" name="TipoReferencia" value="<c:out value='${referencia.tipoReferencia}'></c:out>">
+        <label for="Nombre">Nombre</label>
+        <input type="text" class="form-control" name="Nombre" value="<c:out value='${referencia.nombre}'></c:out>">
 
         <label for="NombreTrabajo">Nombre Trabajo</label>
-        <input type="text" class="form-control" name="NombreTrabajo" >
+        <input type="text" class="form-control" name="NombreTrabajo" value='<c:out value="${referencia.nombreTrabajo"></c:out>'>
 
         <label for="email">email</label>
-        <input type="text" class="form-control" name="email" >
+        <input type="text" class="form-control" name="email" value='<c:out value="${referencia.mail}"></c:out>'>
 
         <label for="Telefono">Telefono</label>
-        <input type="text" class="form-control" name="Telefono" >
+        <input type="text" class="form-control" name="Telefono" value='<c:out value="${referencia.telefono}"></c:out>'>
 
         <label for="Observacion">Observacion</label>
-         <textarea class="form-control" name=Observacion></textarea>
+         <textarea class="form-control" name="Observacion" value='<c:out value="${referencia.observacion}>"></c:out>'></textarea>
         <br>
         <div class="row">
 

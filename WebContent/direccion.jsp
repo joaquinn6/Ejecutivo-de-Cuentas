@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -28,26 +29,26 @@
         <label for="Pais">Pais</label>
         <select class="form-control" id="SelectPais" name="Pais">
           <option>Nicaragua</option>
-          <option>El Salvador</option>
+          <option>El Salvador</option>cambios
           <option>Costa Rica</option>
           <option>Honduras</option>
           <option>Guatemala</option>
           <option>Panama</option>
         </select>
         <label for="Departamento">Departamento</label>
-        <input type="text" class="form-control" name="Departamento" >
+        <input type="text" class="form-control" name="Departamento" value='<c:out value="${direccion.departamento}"></c:out>'>
 
         <label for="Ciudad">Ciudad</label>
-        <input type="text" class="form-control" name="Ciudad">
+        <input type="text" class="form-control" name="Ciudad" value='<c:out value="${direccion.ciudad}"></c:out>'>
 
         <label for="BarrioComarca">Barrio/Comarca</label>
-        <input type="text" class="form-control" name="BarrioComarca" >
+        <input type="text" class="form-control" name="BarrioComarca" value='<c:out value="${direccion.barrioComarca}"></c:out>'>
 
         <label for="DireccionDomiciliar">Direccion Domiciliar</label>
-        <input type="text" class="form-control" name="DireccionDomiciliar">
+        <input type="text" class="form-control" name="DireccionDomiciliar" value='<c:out value="${direccion.direccionDomiciliar}"></c:out>'>
 
         <label for="TipoPropiedad">Tipo de Propiedad</label>
-        <input type="text" class="form-control" name="TipoPropiedad" >
+        <input type="text" class="form-control" name="TipoPropiedad" value='<c:out value="${direccion.tipoPropiedad}"></c:out>'>
         <br>
         <div class="row">
 
